@@ -1,0 +1,19 @@
+meta {
+  name: Atualizar dados
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/coffee/updatedCoffee
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "energetico",
+    "price": 12.50
+  }
+}
